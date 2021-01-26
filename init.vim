@@ -85,6 +85,7 @@ Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'terryma/vim-smooth-scroll'
+Plug 'morhetz/gruvbox'
 
 " Entertainment
 "Plug 'ryanss/vim-hackernews'
@@ -241,6 +242,12 @@ function! ColorZazen()
     IndentLinesEnable
 endfunction
 
+" Gruvbox Mode (Dark)
+function! ColorGruvbox()
+    colorscheme gruvbox
+    IndentLinesEnable
+endfunction
+
 """ Custom Mappings
 
 let mapleader=" "
@@ -252,6 +259,7 @@ nmap <leader>e1 :call ColorDracula()<CR>
 nmap <leader>e2 :call ColorSeoul256()<CR>
 nmap <leader>e3 :call ColorForgotten()<CR>
 nmap <leader>e4 :call ColorZazen()<CR>
+nmap <leader>e5 :call ColorGruvbox()<CR>
 nmap <leader>r :so ~/.config/nvim/init.vim<CR>
 nmap <leader>t :call TrimWhitespace()<CR>
 xmap <leader>a gaip*
