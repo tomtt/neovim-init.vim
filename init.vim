@@ -318,7 +318,7 @@ map <Leader>u :Eunittest<cr>
 map <Leader>v :Eview<cr>
 
 map <Leader>x :bd<cr>
-map <Leader>d :call delete(expand('%'))<cr>
+map <Leader>D :call delete(expand('%'))<cr>
 
 " mapping to tig (integrates git in vim)
 map <Leader>g1 :Commits<CR>
