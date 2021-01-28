@@ -488,3 +488,12 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 :set shiftwidth=2
 :set softtabstop=2
 
+" Activation based on file type
+:augroup rainbow
+:  autocmd!
+:  autocmd FileType lisp,clojure,scheme,ruby RainbowParentheses
+:augroup END
+
+let g:indentLine_enabled = 1
+let g:colorizer_auto_color = 1
+let g:colorizer_auto_filetype='css,html'
