@@ -17,7 +17,7 @@ nmap <leader>s <C-w>s<C-w>j:terminal<CR>
 nmap <leader>vs <C-w>v<C-w>l:terminal<CR>
 nmap <leader>d <Plug>(pydocstring)
 nmap <leader>f :Files<CR>
-nmap <leader>g :Goyo<CR>
+nmap <leader>gg :Goyo<CR>
 nmap <leader>h :RainbowParentheses!!<CR>
 nmap <leader>j :set filetype=journal<CR>
 nmap <leader>k :ColorToggle<CR>
@@ -114,3 +114,9 @@ let g:user_emmet_leader_key=','
 " Toggle shortcuts
 map <Leader>yr :RainbowParentheses!!<CR>
 map <Leader>yi :IndentLinesToggle<CR>
+
+" Go places
+map <leader>ga :Ag<SPACE>
+map <leader>gb :Buffers<CR>
+map <leader>gf :GFiles<CR>
+
