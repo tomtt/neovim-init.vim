@@ -74,7 +74,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'elmcast/elm-vim'
 " Plug 'valloric/youcompleteme'
 
-let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/',
+let g:vimwiki_list = [{'path': ($VIMWIKI_PATH =~ '\w') ? $VIMWIKI_PATH : '~/Dropbox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 Plug 'ConradIrwin/vim-bracketed-paste' " Enables transparent pasting into vim
