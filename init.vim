@@ -4,88 +4,89 @@
 call plug#begin()
 
 " Aesthetics - Main
-Plug 'dracula/vim', { 'commit': '147f389f4275cec4ef43ebc25e2011c57b45cc00' }
+Plug 'dracula/vim', { 'commit': '147f389f4275cec4ef43ebc25e2011c57b45cc00' } " dark theme
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
-Plug 'junegunn/goyo.vim'
-Plug 'junegunn/limelight.vim'
-Plug 'junegunn/seoul256.vim'
-Plug 'junegunn/vim-journal'
+Plug 'ryanoasis/vim-devicons' " Adds file type icons to Vim plugins
+Plug 'junegunn/goyo.vim' " Distraction-free writing
+Plug 'junegunn/limelight.vim' " Hyperfocus-writing in Vim
+Plug 'junegunn/seoul256.vim' " Low contrast theme
+Plug 'junegunn/vim-journal' " Syntax plugin for plain text notes
 Plug 'junegunn/rainbow_parentheses.vim'
-Plug 'nightsense/forgotten'
-Plug 'zaki/zazen'
+Plug 'nightsense/forgotten' " Theme
+Plug 'zaki/zazen' " Color scheme
 
 " Aethetics - Additional
-Plug 'nightsense/nemo'
-Plug 'yuttie/hydrangea-vim'
+Plug 'nightsense/nemo' " Theme
+Plug 'yuttie/hydrangea-vim' " Theme
 Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
-Plug 'rhysd/vim-color-spring-night'
+Plug 'rhysd/vim-color-spring-night' " Low contrast
 
 " Functionalities
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'ervandew/supertab'
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/vim-easy-align'
-Plug 'alvan/vim-closetag'
-Plug 'tpope/vim-abolish'
-Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-fugitive' " Git
+Plug 'tpope/vim-sensible' " Defaults
+Plug 'tpope/vim-surround' " All about 'surroundings' (,{,[,tags etc
+Plug 'majutsushi/tagbar' " Browser for code tags
+Plug 'scrooloose/nerdtree' " File browser
+Plug 'scrooloose/nerdcommenter' " Easy commenting of code for many filetypes
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Completion, dark magic
+Plug 'deoplete-plugins/deoplete-jedi' " Code completion
+Plug 'ervandew/supertab' " Insert completion
+" Plug 'jiangmiao/auto-pairs' " Insert matching closing characters
+Plug 'junegunn/vim-easy-align' " Align code / table based on rules
+Plug 'alvan/vim-closetag' " Autoclose html tags
+Plug 'tpope/vim-abolish' " Abbreviation, substitution, case coercion
+Plug 'Yggdroot/indentLine' " Vertical lines at each code indentation level
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'chrisbra/Colorizer'
-Plug 'KabbAmine/vCoolor.vim'
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
-Plug 'vim-scripts/loremipsum'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'metakirby5/codi.vim'
-Plug 'dkarter/bullets.vim'
+Plug 'junegunn/fzf.vim' " Fuzzy finder
+Plug 'sheerun/vim-polyglot' " Language pack
+Plug 'chrisbra/Colorizer' " color colornames and codes
+Plug 'KabbAmine/vCoolor.vim' " Color picker/selector
+" Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+Plug 'vim-scripts/loremipsum' " Dummy text
+Plug 'SirVer/ultisnips' " Code snippet engine
+Plug 'honza/vim-snippets' " Snippets files for languages for ultisnips
+Plug 'metakirby5/codi.vim' " Interactive hacker scratchpad
+Plug 'dkarter/bullets.vim' " Automated bullet lists
 
 " Plugins added by tomtt
-Plug 'mattn/emmet-vim'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
+Plug 'mattn/emmet-vim' " web development toolkit
+Plug 'tpope/vim-commentary' " Comment stuff out
+Plug 'tpope/vim-endwise' " End certain code structures automatically
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-dispatch'
-Plug 'airblade/vim-gitgutter'
-Plug 'thoughtbot/vim-rspec'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'w0rp/ale'
-Plug 'chr4/nginx.vim'
-Plug 'rhysd/vim-crystal'
+Plug 'tpope/vim-dispatch' " Async
+Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
+Plug 'thoughtbot/vim-rspec' " RSpec runner
+Plug 'Xuyuanp/nerdtree-git-plugin' " Plugin of NERDTree showing git status
+Plug 'w0rp/ale' " Asynchronous Lint Engine, LSP client
+Plug 'chr4/nginx.vim' " Editing nginx config files
+" Plug 'rhysd/vim-crystal' " Filetype Support for Crystal
 Plug 'posva/vim-vue'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
-Plug 'christoomey/vim-system-copy'
-Plug 'farmergreg/vim-lastplace'
+Plug 'christoomey/vim-system-copy' " Copying / pasting text to the os specific clipboard
+Plug 'farmergreg/vim-lastplace' " Intelligently reopen files at your last edit position
 Plug 'ngmy/vim-rubocop'
-Plug 'int3/vim-extradite'
-Plug 'AndrewRadev/switch.vim'
-Plug 'tpope/vim-unimpaired'
-Plug 'vimwiki/vimwiki'
+Plug 'int3/vim-extradite' " Git commit browser
+Plug 'AndrewRadev/switch.vim' " Switch e.g. .should <-> .should_not
+Plug 'tpope/vim-unimpaired' " ??
+Plug 'vimwiki/vimwiki' " Personal wiki for Vim
 Plug 'elixir-editors/vim-elixir'
 Plug 'elmcast/elm-vim'
+" Plug 'valloric/youcompleteme'
 
 let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
-Plug 'ConradIrwin/vim-bracketed-paste'
-Plug 'chrisbra/csv.vim'
-Plug 'noprompt/vim-yardoc'
-Plug 'christoomey/vim-tmux-navigator'
+Plug 'ConradIrwin/vim-bracketed-paste' " Enables transparent pasting into vim
+Plug 'chrisbra/csv.vim' " A Filetype plugin for csv files
+Plug 'noprompt/vim-yardoc' " Syntax extensions for highlighting YARD documentation
+" Plug 'christoomey/vim-tmux-navigator'
 Plug 'leafgarland/typescript-vim'
 Plug 'martinda/Jenkinsfile-vim-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'terryma/vim-smooth-scroll'
-Plug 'morhetz/gruvbox'
+Plug 'terryma/vim-smooth-scroll' " Make scrolling in Vim more pleasant
+Plug 'morhetz/gruvbox' " Theme
 
 " Entertainment
 "Plug 'ryanss/vim-hackernews'
