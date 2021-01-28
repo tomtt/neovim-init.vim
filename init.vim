@@ -30,8 +30,6 @@ Plug 'tpope/vim-surround' " All about 'surroundings' (,{,[,tags etc
 Plug 'majutsushi/tagbar' " Browser for code tags
 Plug 'scrooloose/nerdtree' " File browser
 Plug 'scrooloose/nerdcommenter' " Easy commenting of code for many filetypes
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Completion, dark magic
-" Plug 'deoplete-plugins/deoplete-jedi' " Code completion
 Plug 'ervandew/supertab' " Insert completion
 " Plug 'jiangmiao/auto-pairs' " Insert matching closing characters
 Plug 'junegunn/vim-easy-align' " Align code / table based on rules
@@ -101,6 +99,8 @@ let g:LanguageClient_serverCommands = {
     \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
     \ }
 
+" source ~/.config/nvim/deoplete.vim
+
 " Entertainment
 "Plug 'ryanss/vim-hackernews'
 
@@ -153,11 +153,6 @@ tmap <C-w> <Esc><C-w>
 "tmap <C-d> <Esc>:q<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-" Disable documentation window
-set completeopt-=preview
 
 " vim-pydocstring
 let g:pydocstring_doq_path = '~/.config/nvim/env/bin/doq'
