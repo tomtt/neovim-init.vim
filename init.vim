@@ -73,7 +73,6 @@ Plug 'tpope/vim-unimpaired' " ??
 Plug 'vimwiki/vimwiki' " Personal wiki for Vim
 Plug 'elixir-editors/vim-elixir'
 Plug 'elmcast/elm-vim'
-" Plug 'valloric/youcompleteme'
 
 let g:vimwiki_list = [{'path': ($VIMWIKI_PATH =~ '\w') ? $VIMWIKI_PATH : '~/Dropbox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
