@@ -57,7 +57,7 @@ Plug 'tpope/vim-dispatch' " Async
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
 Plug 'thoughtbot/vim-rspec' " RSpec runner
 Plug 'Xuyuanp/nerdtree-git-plugin' " Plugin of NERDTree showing git status
-Plug 'w0rp/ale' " Asynchronous Lint Engine, LSP client
+" Plug 'w0rp/ale' " Asynchronous Lint Engine, LSP client
 Plug 'chr4/nginx.vim' " Editing nginx config files
 " Plug 'rhysd/vim-crystal' " Filetype Support for Crystal
 Plug 'posva/vim-vue'
