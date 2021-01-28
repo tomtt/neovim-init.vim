@@ -30,8 +30,8 @@ Plug 'tpope/vim-surround' " All about 'surroundings' (,{,[,tags etc
 Plug 'majutsushi/tagbar' " Browser for code tags
 Plug 'scrooloose/nerdtree' " File browser
 Plug 'scrooloose/nerdcommenter' " Easy commenting of code for many filetypes
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Completion, dark magic
-Plug 'deoplete-plugins/deoplete-jedi' " Code completion
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Completion, dark magic
+" Plug 'deoplete-plugins/deoplete-jedi' " Code completion
 Plug 'ervandew/supertab' " Insert completion
 " Plug 'jiangmiao/auto-pairs' " Insert matching closing characters
 Plug 'junegunn/vim-easy-align' " Align code / table based on rules
