@@ -21,6 +21,7 @@ Plug 'nightsense/nemo' " Theme
 Plug 'yuttie/hydrangea-vim' " Theme
 Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
 Plug 'rhysd/vim-color-spring-night' " Low contrast
+Plug 'emanuelrosa/badcat' " Dark colorscheme
 
 " Functionalities
 Plug 'tpope/vim-fugitive' " Git
