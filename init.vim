@@ -90,6 +90,7 @@ set hidden
 
 " source ~/.config/nvim/deoplete.vim
 " source ~/.config/nvim/language_client.vim
+source ~/.config/nvim/coc.vim
 
 " Entertainment
 "Plug 'ryanss/vim-hackernews'

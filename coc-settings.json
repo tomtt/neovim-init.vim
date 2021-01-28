@@ -1,0 +1,6 @@
+{
+  "solargraph.useBundler": true,
+  "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
+  "solargraph.commandPath": "~/.rbenv/shims/solargraph",
+  "codeLens.enable": true
+}
