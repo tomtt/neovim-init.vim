@@ -483,3 +483,16 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 let g:indentLine_enabled = 1
 let g:colorizer_auto_color = 1
 let g:colorizer_auto_filetype='css,html'
+
+" Move cursor to first non-blank column of the line
+set startofline
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing extra message when using completion
+" set shortmess+=c
+
+" Extentions to look for when using `gf`
+" set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
+"
