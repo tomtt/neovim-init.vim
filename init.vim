@@ -494,3 +494,4 @@ set completeopt=menuone,noinsert,noselect
 " Extentions to look for when using `gf`
 " set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
 "
+let NERDTreeMouseMode=3
