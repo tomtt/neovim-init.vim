@@ -40,7 +40,7 @@ map <leader>p :Files<CR>
 " map leader f to  search in buffer
 map <leader>f :BLines<CR>
 " map leader o to split vetically
-map <leader>o :vsp<CR>
+" map <leader>o :vsp<CR>
 map <leader>b :NERDTreeToggle<CR>
 map <leader>C :NERDTreeFind<CR>
 map <leader>B :TagbarToggle<CR>
@@ -116,7 +116,7 @@ map <Leader>yr :RainbowParentheses!!<CR>
 map <Leader>yi :IndentLinesToggle<CR>
 
 " Go places
-map <leader>ga :Ag<SPACE>
-map <leader>gb :Buffers<CR>
-map <leader>gf :GFiles<CR>
+map <leader>oa :Ag<SPACE>
+map <leader>ob :Buffers<CR>
+map <leader>of :GFiles<CR>
 
