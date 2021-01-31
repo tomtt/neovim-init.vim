@@ -113,13 +113,31 @@ let g:user_emmet_leader_key=','
 
 " Toggle shortcuts
 map <Leader>yc :HexokinaseToggle<CR>
-map <Leader>yd :GitGutterFold<CR> " Inline git diff
+" Inline git diff
+map <Leader>yd :GitGutterFold<CR>
 map <Leader>yg :GitGutterBufferToggle<CR>
 map <Leader>yi :IndentLinesToggle<CR>
+map <Leader>yl :ALEToggleBuffer<CR>
 map <Leader>yr :RainbowParentheses!!<CR>
 
 " Go places
+
+" AG search in project
 map <leader>oa :Ag<SPACE>
+" Fzf open buffers
 map <leader>ob :Buffers<CR>
+" Fzf current buffer
+map <leader>oc :BLines<CR>
+" Fzf git files
 map <leader>of :GFiles<CR>
+" Fzf lines in loaded buffers
+map <leader>ol :Lines<CR>
+" Fzf marks
+map <leader>om :Marks<CR>
+" Ripgrep in project
+map <leader>or :Rg<CR>
+" Fzf snippets
+map <leader>os :Snippets<CR>
+" Fzf tags
+map <leader>ot :Tags<CR>
 
