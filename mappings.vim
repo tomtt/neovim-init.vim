@@ -113,6 +113,8 @@ let g:user_emmet_leader_key=','
 
 " Toggle shortcuts
 map <Leader>yc :HexokinaseToggle<CR>
+map <Leader>yd :GitGutterFold<CR> " Inline git diff
+map <Leader>yg :GitGutterBufferToggle<CR>
 map <Leader>yi :IndentLinesToggle<CR>
 map <Leader>yr :RainbowParentheses!!<CR>
 
