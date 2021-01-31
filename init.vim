@@ -470,9 +470,7 @@ nnoremap ˚ :m .-2<CR>==
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ˚ :m '<-2<CR>gv=gv
 
-:set expandtab
-:set shiftwidth=2
-:set softtabstop=2
+set softtabstop=2
 
 " Activation based on file type
 :augroup rainbow
