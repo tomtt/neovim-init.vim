@@ -39,7 +39,7 @@ Plug 'Yggdroot/indentLine' " Vertical lines at each code indentation level
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim' " Fuzzy finder
 Plug 'sheerun/vim-polyglot' " Language pack
-Plug 'chrisbra/Colorizer' " color colornames and codes
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } " color colornames and codes
 Plug 'KabbAmine/vCoolor.vim' " Color picker/selector
 " Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'vim-scripts/loremipsum' " Dummy text
@@ -481,9 +481,9 @@ vnoremap ˚ :m '<-2<CR>gv=gv
 :augroup END
 
 let g:indentLine_enabled = 1
-let g:colorizer_auto_color = 1
-let g:colorizer_auto_filetype='css,html'
-
+let g:Hexokinase_highlighters = ['background']
+let g:Hexokinase_optInPatterns = 'full_hex,triple_hex,rgb,rgba,hsl,hsla,colour_names'
+"
 " Move cursor to first non-blank column of the line
 set startofline
 

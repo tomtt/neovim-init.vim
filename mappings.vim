@@ -112,8 +112,9 @@ map <Leader>A :qa<CR>
 let g:user_emmet_leader_key=','
 
 " Toggle shortcuts
-map <Leader>yr :RainbowParentheses!!<CR>
+map <Leader>yc :HexokinaseToggle<CR>
 map <Leader>yi :IndentLinesToggle<CR>
+map <Leader>yr :RainbowParentheses!!<CR>
 
 " Go places
 map <leader>oa :Ag<SPACE>
