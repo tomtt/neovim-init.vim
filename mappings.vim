@@ -86,8 +86,6 @@ map <Leader>g5 :!git commit<CR>
 map <Leader>g6 :Extradite<CR>
 map <Leader>gb :Gblame<CR>
 
-map <Leader>X :%bd<CR>
-
 map <Leader>de o(require('pry'); binding.pry)<ESC>
 
 " map leader h to prev buffer
@@ -120,6 +118,32 @@ nnoremap <Leader>yi :IndentLinesToggle<CR>
 nnoremap <Leader>yl :ALEToggleBuffer<CR>
 nnoremap <Leader>yr :RainbowParentheses!!<CR>
 
+"Editing
+" 'inside next parenthesis'
+onoremap <silent> in( :<c-u>normal! f(vi(<cr>
+" 'inside previous parenthesis'
+onoremap <silent> in) :<c-u>normal! F(vi(<cr>
+
+inoremap jk <esc>
+
+" Navigating diagnostics
+nmap <silent> <c-k>       <plug>(coc-diagnostic-prev)
+nmap <silent> <c-j>       <plug>(coc-diagnostic-next)
+
+" Open definition of word under cursor
+nmap <silent> <leader>jd <Plug>(coc-definition)
+nnoremap <silent> <leader>js <cmd>call CocAction('jumpDefinition', 'split')<cr>
+nnoremap <silent> <leader>jv <cmd>call CocAction('jumpDefinition', 'vsplit')<cr>
+nnoremap <silent> <leader>jt <cmd>call CocAction('jumpDefinition', 'tabe')<cr>
+nmap <silent> <leader>jc <plug>(coc-rename)
+nmap <leader>jr <plug>(coc-references)
+nmap <leader>jt <plug>(coc-type-definition)
+
+" Does not work, but I want it :(
+nmap <silent> <leader>jh <cmd>call CocAction('showSignatureHelp')<cr>
+" Or this :(
+" nmap <silent> K           <cmd>call <sid>show_documentation()<cr>
+
 " Go places
 
 " CocList diagnostics
@@ -128,8 +152,6 @@ nnoremap <leader>oa :<C-u>CocList diagnostics<cr>
 nnoremap <leader>ob :Buffers<CR>
 " Fzf current buffer
 nnoremap <leader>oc :BLines<CR>
-" Open definition of word under cursor
-nnoremap <leader>od <Plug>(coc-definition)
 " Fzf files
 nnoremap <leader>of :Files<CR>
 " Fzf git files
@@ -144,4 +166,6 @@ nnoremap <leader>or :Rg<CR>
 nnoremap <leader>os :Snippets<CR>
 " Fzf tags
 nnoremap <leader>ot :Tags<CR>
+" Fzf windows
+nnoremap <silent> <leader>ow <cmd>Windows<CR>
 
