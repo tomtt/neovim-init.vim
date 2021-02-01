@@ -458,6 +458,15 @@ set completeopt=menuone,noinsert,noselect
 " Extentions to look for when using `gf`
 set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
 
+" Foldable xml, open by default
+augroup XML
+  autocmd!
+  autocmd FileType xml let g:xml_syntax_folding=1
+  autocmd FileType xml setlocal foldmethod=syntax
+  autocmd FileType xml :syntax on
+  autocmd FileType xml :%foldopen!
+augroup END
+
 " configure vim-ruby to use the same indentation style as standardrb
 " https://github.com/testdouble/standard/wiki/IDE:-vim
 let g:ruby_indent_assignment_style = 'variable'
