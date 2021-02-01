@@ -112,32 +112,36 @@ map <Leader>A :qa<CR>
 let g:user_emmet_leader_key=','
 
 " Toggle shortcuts
-map <Leader>yc :HexokinaseToggle<CR>
+nnoremap <Leader>yc :HexokinaseToggle<CR>
 " Inline git diff
-map <Leader>yd :GitGutterFold<CR>
-map <Leader>yg :GitGutterBufferToggle<CR>
-map <Leader>yi :IndentLinesToggle<CR>
-map <Leader>yl :ALEToggleBuffer<CR>
-map <Leader>yr :RainbowParentheses!!<CR>
+nnoremap <Leader>yd :GitGutterFold<CR>
+nnoremap <Leader>yg :GitGutterBufferToggle<CR>
+nnoremap <Leader>yi :IndentLinesToggle<CR>
+nnoremap <Leader>yl :ALEToggleBuffer<CR>
+nnoremap <Leader>yr :RainbowParentheses!!<CR>
 
 " Go places
 
-" AG search in project
-map <leader>oa :Ag<SPACE>
+" CocList diagnostics
+nnoremap <leader>oa :<C-u>CocList diagnostics<cr>
 " Fzf open buffers
-map <leader>ob :Buffers<CR>
+nnoremap <leader>ob :Buffers<CR>
 " Fzf current buffer
-map <leader>oc :BLines<CR>
+nnoremap <leader>oc :BLines<CR>
+" Open definition of word under cursor
+nnoremap <leader>od <Plug>(coc-definition)
+" Fzf files
+nnoremap <leader>of :Files<CR>
 " Fzf git files
-map <leader>of :GFiles<CR>
+nnoremap <leader>og :GFiles<CR>
 " Fzf lines in loaded buffers
-map <leader>ol :Lines<CR>
+nnoremap <leader>ol :Lines<CR>
 " Fzf marks
-map <leader>om :Marks<CR>
+nnoremap <leader>om :Marks<CR>
 " Ripgrep in project
-map <leader>or :Rg<CR>
+nnoremap <leader>or :Rg<CR>
 " Fzf snippets
-map <leader>os :Snippets<CR>
+nnoremap <leader>os :Snippets<CR>
 " Fzf tags
-map <leader>ot :Tags<CR>
+nnoremap <leader>ot :Tags<CR>
 
