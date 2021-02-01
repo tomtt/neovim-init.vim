@@ -55,7 +55,6 @@ Plug 'tpope/vim-dispatch' " Async
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
 Plug 'thoughtbot/vim-rspec' " RSpec runner
 Plug 'Xuyuanp/nerdtree-git-plugin' " Plugin of NERDTree showing git status
-" Plug 'w0rp/ale' " Asynchronous Lint Engine, LSP client
 Plug 'chr4/nginx.vim' " Editing nginx config files
 " Plug 'rhysd/vim-crystal' " Filetype Support for Crystal
 Plug 'posva/vim-vue'
@@ -86,9 +85,10 @@ Plug 'morhetz/gruvbox' " Theme
 
 set hidden
 
-" One of deoplete/language_client/coc is to handle completion
+" One of deoplete/language_client/coc/ale is to act as LSP client
 " source ~/.config/nvim/deoplete.vim
 " source ~/.config/nvim/language_client.vim
+" source ~/.config/nvim/ale.vim
 source ~/.config/nvim/coc.vim
 
 " Entertainment
@@ -401,24 +401,6 @@ let g:tagbar_type_ruby = {
       \ 'F:singleton methods'
       \ ]
       \ }
-
-let g:ale_linters = {
-      \'ruby': ['rubocop', 'reek'],
-      \}
-
-let g:ale_fixers = {
-      \   'javascript': ['prettier'],
-      \   'css': ['prettier'],
-      \}
-
-let g:ale_fix_on_save = 1
-let g:ale_set_highlights = 0 " disable highlighting
-let g:ale_sign_column_always = 1
-
-
-
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
 
 let g:ruby_heredoc_syntax_filetypes = {
         \ "xml" : {
