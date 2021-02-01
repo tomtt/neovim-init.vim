@@ -36,8 +36,6 @@ Plug 'junegunn/vim-easy-align' " Align code / table based on rules
 Plug 'alvan/vim-closetag' " Autoclose html tags
 Plug 'tpope/vim-abolish' " Abbreviation, substitution, case coercion
 Plug 'Yggdroot/indentLine' " Vertical lines at each code indentation level
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim' " Fuzzy finder
 Plug 'sheerun/vim-polyglot' " Language pack
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' } " color colornames and codes
 Plug 'KabbAmine/vCoolor.vim' " Color picker/selector
@@ -88,12 +86,15 @@ Plug 'morhetz/gruvbox' " Theme
 
 set hidden
 
+" One of deoplete/language_client/coc is to handle completion
 " source ~/.config/nvim/deoplete.vim
 " source ~/.config/nvim/language_client.vim
 source ~/.config/nvim/coc.vim
 
 " Entertainment
 "Plug 'ryanss/vim-hackernews'
+
+source ~/.config/nvim/fzf_setup.vim
 
 call plug#end()
 
@@ -168,25 +169,6 @@ let g:indentLine_color_gui = '#363949'
 let g:tagbar_width = 30
 let g:tagbar_iconchars = ['↠', '↡']
 
-" fzf-vim
-let g:fzf_action = {
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-s': 'split',
-  \ 'ctrl-v': 'vsplit' }
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'Type'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Character'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
 
 """ Filetype-Specific Configurations
 
@@ -255,9 +237,6 @@ source ~/.config/nvim/mappings.vim
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" search using fzf
-set rtp+=/usr/local/opt/fzf
 
 if has("vms")
   set nobackup " do not keep a backup file, use versions instead
