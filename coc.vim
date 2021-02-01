@@ -1,5 +1,6 @@
 " Add the plin itself
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-solargraph'
   let g:lightline = {
     \ 'colorscheme': 'wombat',
     \ 'active': {
@@ -42,4 +43,4 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     return !col || getline('.')[col - 1]  =~# '\s'
   endfunction
 
-  let g:coc_global_extensions = ['coc-json', 'coc-fzf-preview', 'coc-html', 'coc-markdownlint', 'coc-prettier']
+  let g:coc_global_extensions = ['coc-solargraph', 'coc-json', 'coc-fzf-preview', 'coc-html', 'coc-markdownlint', 'coc-prettier']

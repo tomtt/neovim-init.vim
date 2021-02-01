@@ -2,5 +2,12 @@
   "solargraph.useBundler": true,
   "solargraph.bundlerPath": "~/.rbenv/shims/bundle",
   "solargraph.commandPath": "~/.rbenv/shims/solargraph",
-  "codeLens.enable": true
+  "solargraph.diagnostics": true,
+  "solargraph.formatting": true,
+  "codeLens.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "json",
+    "ruby"
+  ]
 }
