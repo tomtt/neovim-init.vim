@@ -19,7 +19,11 @@ nmap <leader>d <Plug>(pydocstring)
 nmap <leader>f :Files<CR>
 nmap <leader>gg :Goyo<CR>
 nmap <leader>h :RainbowParentheses!!<CR>
-nmap <leader>j :set filetype=journal<CR>
+nmap <leader>J :set filetype=journal<CR>
+nmap <leader>M :set filetype=markdown<CR>
+nmap <leader>R :set filetype=ruby<CR>
+nmap <leader>V :set filetype=vimwiki<CR>
+nmap <leader>X :set filetype=text<CR>
 nmap <leader>k :ColorToggle<CR>
 nmap <leader>l :Limelight!!<CR>
 xmap <leader>l :Limelight!!<CR>
