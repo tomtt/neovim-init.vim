@@ -1,5 +1,5 @@
 """ Custom Mappings
-let mapleader=" "
+let mapleader="\<Space>"
 nmap \ <leader>q
 nmap <leader>w :TagbarToggle<CR>
 nmap <leader>ee :Colors<CR>
