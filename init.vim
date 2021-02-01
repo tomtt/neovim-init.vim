@@ -456,8 +456,8 @@ set completeopt=menuone,noinsert,noselect
 " set shortmess+=c
 
 " Extentions to look for when using `gf`
-" set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
-"
+set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
+
 " configure vim-ruby to use the same indentation style as standardrb
 " https://github.com/testdouble/standard/wiki/IDE:-vim
 let g:ruby_indent_assignment_style = 'variable'
