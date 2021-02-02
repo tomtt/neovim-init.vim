@@ -82,6 +82,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'terryma/vim-smooth-scroll' " Make scrolling in Vim more pleasant
 Plug 'morhetz/gruvbox' " Theme
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
 " Plug 'airblade/vim-rooter' " Changes working directory to project root
 
 set hidden
