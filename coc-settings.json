@@ -5,9 +5,5 @@
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
   "codeLens.enable": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "json",
-    "ruby"
-  ]
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "json"]
 }
