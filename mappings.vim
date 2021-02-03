@@ -128,7 +128,7 @@ onoremap <silent> in( :<c-u>normal! f(vi(<cr>
 " 'inside previous parenthesis'
 onoremap <silent> in) :<c-u>normal! F(vi(<cr>
 
-inoremap jk <esc>
+inoremap jj <esc>
 
 " Navigating diagnostics
 nmap <silent> <c-k>       <plug>(coc-diagnostic-prev)
