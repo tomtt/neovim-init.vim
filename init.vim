@@ -83,6 +83,7 @@ Plug 'mxw/vim-jsx'
 Plug 'terryma/vim-smooth-scroll' " Make scrolling in Vim more pleasant
 Plug 'morhetz/gruvbox' " Theme
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'dhruvasagar/vim-zoom'
 " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Plug 'airblade/vim-rooter' " Changes working directory to project root
@@ -141,9 +142,9 @@ let NERDTreeMouseMode = 3 " Single mouseclick
 
 " Airline
 let g:airline_powerline_fonts = 1
-let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
 let g:airline_section_warning = ''
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_section_z = ' %{zoom#statusline()}'
 
 " Neovim :Terminal
 tmap <Esc> <C-\><C-n>
