@@ -128,28 +128,43 @@ onoremap <silent> in( :<c-u>normal! f(vi(<cr>
 " 'inside previous parenthesis'
 onoremap <silent> in) :<c-u>normal! F(vi(<cr>
 
+" copy buffer path to clipboard and echo it
+function! CopyBufferPath(expand_arg)
+      let @+ = expand(a:expand_arg)
+      echo @+
+endfunction
+
+nnoremap <Leader>j :let @+=expand('%:p')<CR>
+
+" hands-on-home-row escape
 inoremap jj <esc>
 
 " Navigating diagnostics
 nmap <silent> <c-k>       <plug>(coc-diagnostic-prev)
 nmap <silent> <c-j>       <plug>(coc-diagnostic-next)
 
+"""""""""""""""""""""""""
+" Jump places <leader>j "
+"""""""""""""""""""""""""
+nnoremap <leader>jb :call CopyBufferPath('%')<CR>
+nnoremap <leader>jB :call CopyBufferPath('%:p')<CR>
+nmap <silent> <leader>jc <plug>(coc-rename)
 " Open definition of word under cursor
 nmap <silent> <leader>jd <Plug>(coc-definition)
-nnoremap <silent> <leader>js <cmd>call CocAction('jumpDefinition', 'split')<cr>
-nnoremap <silent> <leader>jv <cmd>call CocAction('jumpDefinition', 'vsplit')<cr>
-nnoremap <silent> <leader>jt <cmd>call CocAction('jumpDefinition', 'tabe')<cr>
-nmap <silent> <leader>jc <plug>(coc-rename)
+nmap <leader>jp <plug>(coc-type-definition)
 nmap <leader>jr <plug>(coc-references)
-nmap <leader>jt <plug>(coc-type-definition)
+nnoremap <silent> <leader>js <cmd>call CocAction('jumpDefinition', 'split')<cr>
+nnoremap <silent> <leader>jt <cmd>call CocAction('jumpDefinition', 'tabe')<cr>
+nnoremap <silent> <leader>jv <cmd>call CocAction('jumpDefinition', 'vsplit')<cr>
 
 " Does not work, but I want it :(
 nmap <silent> <leader>jh <cmd>call CocAction('showSignatureHelp')<cr>
 " Or this :(
 " nmap <silent> K           <cmd>call <sid>show_documentation()<cr>
 
-" Go places
-
+"""""""""""""""""""""""
+" Go places <leader>g "
+"""""""""""""""""""""""
 " CocList diagnostics
 nnoremap <leader>oa :<C-u>CocList diagnostics<cr>
 " Fzf open buffers
