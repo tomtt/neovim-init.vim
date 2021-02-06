@@ -137,9 +137,11 @@ endfunction
 nnoremap <Leader>j :let @+=expand('%:p')<CR>
 
 " hands-on-home-row escape
-function! PlayNoise(sound)
+function! PlayNoise(sound, ...)
+  " optional arg: volume in 0..100, default value 5
+  let vol = get(a:, 1, 5)
+
   if !empty(expand(glob(a:sound)))
-    let vol = 5
     silent exec "!mplayer -really-quiet -volume " . vol . " " . a:sound
   endif
 endfunction
