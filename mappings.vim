@@ -130,19 +130,21 @@ onoremap <silent> in) :<c-u>normal! F(vi(<cr>
 
 " copy buffer path to clipboard and echo it
 function! CopyBufferPath(expand_arg)
-      let @+ = expand(a:expand_arg)
-      echo @+
+  let @+ = expand(a:expand_arg)
+  echo @+
 endfunction
 
 nnoremap <Leader>j :let @+=expand('%:p')<CR>
 
 " hands-on-home-row escape
-function! PlayNoise()
-      let vol = 5
-      silent exec "!mplayer -really-quiet -volume " . vol . " " . $VIM_PING_SOUND
+function! PlayNoise(sound)
+  if !empty(expand(glob(a:sound)))
+    let vol = 5
+    silent exec "!mplayer -really-quiet -volume " . vol . " " . a:sound
+  endif
 endfunction
 " play a noise to warn to not use escape, but escape anyway
-inoremap <esc> <cmd>call PlayNoise()<cr><esc>
+inoremap <esc> <cmd>call PlayNoise($VIM_PING_SOUND)<cr><esc>
 inoremap kj <esc>
 
 " Navigating diagnostics
