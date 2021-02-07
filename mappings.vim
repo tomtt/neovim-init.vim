@@ -96,6 +96,7 @@ map <Leader>g6 :Extradite<CR>
 map <Leader>gb :Gblame<CR>
 
 noremap <Leader>de o(require('pry'); binding.pry)<ESC>
+autocmd FileType javascript noremap <Leader>de oeval(require('pryjs').it); <ESC>
 
 " map leader h to prev buffer
 map <Leader>h :bprev<cr>
