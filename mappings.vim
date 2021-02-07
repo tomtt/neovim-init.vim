@@ -95,7 +95,7 @@ map <Leader>g5 :!git commit<CR>
 map <Leader>g6 :Extradite<CR>
 map <Leader>gb :Gblame<CR>
 
-map <Leader>de o(require('pry'); binding.pry)<ESC>
+noremap <Leader>de o(require('pry'); binding.pry)<ESC>
 
 " map leader h to prev buffer
 map <Leader>h :bprev<cr>
