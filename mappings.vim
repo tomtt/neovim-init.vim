@@ -1,6 +1,11 @@
 """ Custom Mappings
 let mapleader="\<Space>"
 nmap \ <leader>q
+" Neovim :Terminal
+tmap <Esc> <C-\><C-n>
+tmap kj <C-\><C-n>
+tmap <C-w> <Esc><C-w>
+
 nmap <leader>w :TagbarToggle<CR>
 nmap <leader>ee :Colors<CR>
 nmap <leader>ea :AirlineTheme

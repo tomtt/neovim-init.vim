@@ -146,9 +146,6 @@ let g:airline_section_warning = ''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_z = ' %{zoom#statusline()}'
 
-" Neovim :Terminal
-tmap <Esc> <C-\><C-n>
-tmap <C-w> <Esc><C-w>
 "tmap <C-d> <Esc>:q<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
