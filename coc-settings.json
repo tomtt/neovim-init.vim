@@ -4,6 +4,7 @@
   "solargraph.commandPath": "~/.rbenv/shims/solargraph",
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
+  "solargraph.checkGemVersion": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "json"]
 }
