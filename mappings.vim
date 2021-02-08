@@ -144,11 +144,11 @@ nnoremap <Leader>j :let @+=expand('%:p')<CR>
 
 " hands-on-home-row escape
 function! PlayNoise(sound, ...)
-  " optional arg: volume in 0..100, default value 5
-  let vol = get(a:, 1, 5)
+  " optional arg: volume, default value 0.6
+  let vol = get(a:, 1, 0.6)
 
   if !empty(expand(glob(a:sound)))
-    silent exec "!mplayer -really-quiet -volume " . vol . " " . a:sound
+    silent exec "!afplay --volume " . string(vol) . " " . a:sound
   endif
 endfunction
 " play a noise to warn to not use escape, but escape anyway
