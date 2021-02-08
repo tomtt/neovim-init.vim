@@ -191,6 +191,8 @@ nnoremap <leader>oc :BLines<CR>
 nnoremap <leader>of :Files<CR>
 " Fzf git files
 nnoremap <leader>og :GFiles<CR>
+" FzF file history
+nnoremap <leader>oh :History<CR>
 " Fzf lines in loaded buffers
 nnoremap <leader>ol :Lines<CR>
 " Fzf marks
