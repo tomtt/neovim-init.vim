@@ -469,6 +469,15 @@ augroup XML
   autocmd FileType xml :%foldopen!
 augroup END
 
+function! PlayNoise(sound, ...)
+  " optional arg: volume, default value 0.3
+  let vol = get(a:, 1, 0.3)
+
+  if !empty(expand(glob(a:sound)))
+    silent exec "!afplay --volume " . string(vol) . " " . a:sound
+  endif
+endfunction
+
 " configure vim-ruby to use the same indentation style as standardrb
 " https://github.com/testdouble/standard/wiki/IDE:-vim
 let g:ruby_indent_assignment_style = 'variable'

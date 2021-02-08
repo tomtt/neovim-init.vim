@@ -143,17 +143,11 @@ endfunction
 nnoremap <Leader>j :let @+=expand('%:p')<CR>
 
 " hands-on-home-row escape
-function! PlayNoise(sound, ...)
-  " optional arg: volume, default value 0.6
-  let vol = get(a:, 1, 0.6)
-
-  if !empty(expand(glob(a:sound)))
-    silent exec "!afplay --volume " . string(vol) . " " . a:sound
-  endif
-endfunction
 " play a noise to warn to not use escape, but escape anyway
 inoremap <esc> <cmd>call PlayNoise($VIM_PING_SOUND)<cr><esc>
+vnoremap <esc> <cmd>call PlayNoise($VIM_PING_SOUND)<cr><esc>
 inoremap kj <esc>
+vnoremap kj <esc>
 
 " Navigating diagnostics
 nmap <silent> <c-k>       <plug>(coc-diagnostic-prev)
