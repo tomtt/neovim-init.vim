@@ -83,7 +83,8 @@ Plug 'mxw/vim-jsx'
 Plug 'terryma/vim-smooth-scroll' " Make scrolling in Vim more pleasant
 Plug 'morhetz/gruvbox' " Theme
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-Plug 'dhruvasagar/vim-zoom'
+Plug 'dhruvasagar/vim-zoom' " Make single pane full window
+Plug 'AndrewRadev/bufferize.vim' " Put output of vim command into a buffer
 " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " Plug 'airblade/vim-rooter' " Changes working directory to project root
