@@ -64,7 +64,7 @@ Plug 'farmergreg/vim-lastplace' " Intelligently reopen files at your last edit p
 Plug 'ngmy/vim-rubocop'
 Plug 'int3/vim-extradite' " Git commit browser
 Plug 'AndrewRadev/switch.vim' " Switch e.g. .should <-> .should_not
-Plug 'tpope/vim-unimpaired' " ??
+Plug 'tpope/vim-unimpaired' " Pairs of handy bracket mappings
 Plug 'vimwiki/vimwiki' " Personal wiki for Vim
 Plug 'elixir-editors/vim-elixir'
 Plug 'elmcast/elm-vim'
