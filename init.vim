@@ -143,10 +143,11 @@ let g:NERDTreeIgnore = ['^node_modules$', '^.git$']
 let NERDTreeMouseMode = 3 " Single mouseclick
 
 " Airline
+
 let g:airline_powerline_fonts = 1
 let g:airline_section_warning = ''
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_z = ' %{zoom#statusline()}'
+let g:airline_section_z = '%m %{zoom#statusline()} %p%% %#__accent_bold#%{g:airline_symbols.linenr}%l%#__restore__#%#__accent_bold#/%L%{g:airline_symbols.maxlinenr}%#__restore__#:%v'
 
 "tmap <C-d> <Esc>:q<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
