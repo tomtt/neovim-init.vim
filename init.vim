@@ -388,7 +388,7 @@ endif
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup
-  command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+  command! -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 
 endif
 
