@@ -201,7 +201,7 @@ endfunction
 
 " Dracula Mode (Dark)
 function! ColorDracula()
-    let g:airline_theme=''
+    let g:airline_theme='dracula'
     color dracula
     IndentLinesEnable
 endfunction
@@ -231,6 +231,7 @@ endfunction
 
 " Gruvbox Mode (Dark)
 function! ColorGruvbox()
+    let g:airline_theme='cool'
     colorscheme gruvbox
     IndentLinesEnable
 endfunction
