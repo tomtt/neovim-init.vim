@@ -446,7 +446,9 @@ set softtabstop=2
 " Activation based on file type
 :augroup rainbow
 :  autocmd!
-:  autocmd FileType lisp,clojure,scheme,ruby RainbowParentheses
+:  autocmd FileType lisp,clojure,scheme RainbowParentheses
+" Disable in ruby for now since it color of first level parens end up too dark
+" :  autocmd FileType ruby RainbowParentheses
 :augroup END
 
 let g:indentLine_enabled = 1
