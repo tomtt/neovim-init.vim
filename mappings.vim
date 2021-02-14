@@ -95,8 +95,8 @@ map <Leader>g5 :!git commit<CR>
 map <Leader>g6 :Extradite<CR>
 map <Leader>gb :Gblame<CR>
 
-noremap <Leader>de O(require('pry'); binding.pry)<ESC>
-autocmd FileType javascript noremap <Leader>de Oeval(require('pryjs').it); <ESC>
+noremap <Leader>de O(require('pry'); binding.pry)<ESC>+
+autocmd FileType javascript noremap <Leader>de Oeval(require('pryjs').it);<ESC>+
 
 " map leader h to prev buffer
 map <Leader>h :bprev<cr>
