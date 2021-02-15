@@ -73,6 +73,8 @@ Plug 'elmcast/elm-vim'
 
 let g:vimwiki_list = [{'path': ($VIMWIKI_PATH =~ '\w') ? $VIMWIKI_PATH : '~/Dropbox/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
+" Only treat markdown files in vimwiki dir as such
+let g:vimwiki_global_ext = 0
 
 Plug 'ConradIrwin/vim-bracketed-paste' " Enables transparent pasting into vim
 Plug 'chrisbra/csv.vim' " A Filetype plugin for csv files
