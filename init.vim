@@ -51,6 +51,8 @@ Plug 'mattn/emmet-vim' " web development toolkit
 Plug 'tpope/vim-commentary' " Comment stuff out
 Plug 'tpope/vim-endwise' " End certain code structures automatically
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-projectionist' " Patterns for file navigation
+Plug 'tpope/vim-rake' " Use projectionist to navigate in a plain ruby project
 Plug 'tpope/vim-dispatch' " Async
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
 Plug 'thoughtbot/vim-rspec' " RSpec runner

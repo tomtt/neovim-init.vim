@@ -162,6 +162,7 @@ nmap <silent> <leader>jc <plug>(coc-rename)
 " Open definition of word under cursor
 nmap <silent> <leader>jd <Plug>(coc-definition)
 nmap <leader>jp <plug>(coc-type-definition)
+
 nmap <leader>jr <plug>(coc-references)
 nnoremap <silent> <leader>js <cmd>call CocAction('jumpDefinition', 'split')<cr>
 nnoremap <silent> <leader>jt <cmd>call CocAction('jumpDefinition', 'tabe')<cr>
@@ -175,8 +176,8 @@ nmap <silent> <leader>jh <cmd>call CocAction('showSignatureHelp')<cr>
 """""""""""""""""""""""
 " Go places <leader>g "
 """""""""""""""""""""""
-" CocList diagnostics
-nnoremap <leader>oa :<C-u>CocList diagnostics<cr>
+" Open alternate file (usually test / implementation)
+nnoremap <leader>oa :A<CR>
 " Fzf open buffers
 nnoremap <leader>ob :Buffers<CR>
 " Fzf current buffer
@@ -187,6 +188,8 @@ nnoremap <leader>of :Files<CR>
 nnoremap <leader>og :GFiles<CR>
 " FzF file history
 nnoremap <leader>oh :History<CR>
+" CocList diagnostics
+nnoremap <leader>oi :<C-u>CocList diagnostics<cr>
 " Fzf lines in loaded buffers
 nnoremap <leader>ol :Lines<CR>
 " Fzf marks
@@ -197,6 +200,8 @@ nnoremap <leader>or :Rg<CR>
 nnoremap <leader>os :Snippets<CR>
 " Fzf tags
 nnoremap <leader>ot :Tags<CR>
+" Open alternate file in opposite pane
+nmap <leader>ov <c-w>o<cmd>AV<CR>
 " Fzf windows
 nnoremap <silent> <leader>ow <cmd>Windows<CR>
 
