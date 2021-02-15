@@ -493,5 +493,6 @@ endfunction
 " https://github.com/testdouble/standard/wiki/IDE:-vim
 let g:ruby_indent_assignment_style = 'variable'
 
-source ~/.config/nvim/macros.vim
+let g:rspec_runner = "os_x_iterm2"
 
+source ~/.config/nvim/macros.vim
