@@ -184,6 +184,8 @@ nnoremap <leader>oa :A<CR>
 nnoremap <leader>ob :Buffers<CR>
 " Fzf current buffer
 nnoremap <leader>oc :BLines<CR>
+" Fzf files changed since origin/master
+nnoremap <leader>od :GDiffFiles<CR>
 " Fzf files
 nnoremap <leader>of :Files<CR>
 " Fzf git files

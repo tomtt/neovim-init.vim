@@ -27,6 +27,24 @@ let g:fzf_layout = {'up': '~60%' }
 " search using fzf
 set rtp+=/usr/local/opt/fzf
 
+
+" GDiffFiles fzf opens files changed since origin/master branch
+let g:diff_files_branch = 'origin/master'
+command! -bang -nargs=* GDiffFiles
+  \ call fzf#run(fzf#wrap(
+  \   'g_diff_files',
+  \   {
+  \      'source': 'git diff --name-only --diff-filter=ACM '.g:diff_files_branch,
+  \   },
+  \   <bang>0
+  \ ))
+
+" This was a try at GDiffFiles: it did show preview but did not open the file
+" command! -bang -nargs=* GDiffFiles
+"   \ call fzf#vim#grep(
+"   \   'git diff --name-only --diff-filter=ACM '.g:diff_files_branch, 0,
+"   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
 " " This was supposed to use current theme colors for fzf colors, but does not work
 " let g:fzf_colors =
 " \ { 'fg':      ['fg', 'Normal'],
