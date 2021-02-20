@@ -176,7 +176,7 @@ nmap <silent> <leader>jh <cmd>call CocAction('showSignatureHelp')<cr>
 " nmap <silent> K           <cmd>call <sid>show_documentation()<cr>
 
 """""""""""""""""""""""
-" Go places <leader>g "
+" Go places <leader>o "
 """""""""""""""""""""""
 " Open alternate file (usually test / implementation)
 nnoremap <leader>oa :A<CR>
@@ -208,4 +208,7 @@ nnoremap <leader>ot :Tags<CR>
 nmap <leader>ov <c-w>o<cmd>AV<CR>
 " Fzf windows
 nnoremap <silent> <leader>ow <cmd>Windows<CR>
+
+vmap <leader>ef  <Plug>(coc-format-selected)
+nmap <leader>ef  <Plug>(coc-format-selected)
 
