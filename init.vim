@@ -53,6 +53,7 @@ Plug 'tpope/vim-endwise' " End certain code structures automatically
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-projectionist' " Patterns for file navigation
 Plug 'tpope/vim-rake' " Use projectionist to navigate in a plain ruby project
+Plug 'tomtt/vim-ruby-fold' " simple folding for ruby and rspec files
 Plug 'tpope/vim-dispatch' " Async
 Plug 'airblade/vim-gitgutter' " Shows a git diff in the sign column
 Plug 'thoughtbot/vim-rspec' " RSpec runner
@@ -471,6 +472,7 @@ set completeopt=menuone,noinsert,noselect
 " Extentions to look for when using `gf`
 set suffixesadd+=.tsx,.ts,.js,.jsx,.scss,.css,.json
 
+set foldlevelstart=99
 " Foldable xml, open by default
 augroup XML
   autocmd!
