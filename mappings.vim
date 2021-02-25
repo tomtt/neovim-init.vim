@@ -212,3 +212,8 @@ nnoremap <silent> <leader>ow <cmd>Windows<CR>
 vmap <leader>ef  <Plug>(coc-format-selected)
 nmap <leader>ef  <Plug>(coc-format-selected)
 
+" vnoremap u :execute "keeppatterns normal! /[A-Z]"<CR>
+" vnoremap u /\([A-Z]\|\>\)<CR>
+vnoremap u /\u<CR>
+onoremap u :normal vuh<CR>
+
